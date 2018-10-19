@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import SimpleAppBar from './composants/Header'
+import SimpleAppBar from './composants/SImpleAppBar';
 import corpo from './img/corpo.jpg'
-import MediaCard from './composants/Missions'
 import Grid from '@material-ui/core/Grid';
+import './Home.css';
+import Missions from './composants/Missions';
 
 class Home extends Component {
     render() {
@@ -11,9 +12,7 @@ class Home extends Component {
             <SimpleAppBar/> 
             <img src={corpo} alt='corpo'className='corpo'/>
             <Grid container justify="space-around">
-            <MediaCard />
-            <MediaCard />
-            <MediaCard />
+            <Missions />
             </Grid>
             </div>
             
