@@ -7,6 +7,8 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 
 
+
+
 const styles = {
   root: {
     flexGrow: 1,
@@ -19,20 +21,20 @@ function SimpleAppBar(props) {
   return (
     <div className={classes.root}>
       <AppBar position="static" color="default">
-        <Toolbar>
-          <Typography variant="h6" color="inherit">
-            Photos
-          </Typography>
-          <Button color="primary" className={classes.button}>
-        Primary
-      </Button>
-      <Button color="primary" className={classes.button}>
-        Primary
-      </Button>
-      <Button color="primary" className={classes.button}>
-        Primary
-      </Button>
-        </Toolbar>
+          <Toolbar>
+            <Typography variant="h6" color="inherit">
+              logo
+            </Typography>
+            <Button color="primary" className={classes.button}>
+              Primary
+            </Button>
+            <Button color="primary" className={classes.button}>
+              Primary
+            </Button>
+            <Button color="primary" className={classes.button}>
+              Primary
+            </Button>
+          </Toolbar>
       </AppBar>
     </div>
   );
