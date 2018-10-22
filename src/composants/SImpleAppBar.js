@@ -5,6 +5,8 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+import logo from '../img/logo.jpeg';
+import SimpleMenu from './SimpleMenu';
 
 
 
@@ -20,17 +22,15 @@ function SimpleAppBar(props) {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" color="default">
+      <AppBar className="app-bar" position="static" color="default">
           <Toolbar>
             <Typography variant="h6" color="inherit">
-              logo
+              <img className="logo" src={logo} alt="nestranny-logo" />
             </Typography>
             <Button color="primary" className={classes.button}>
               Primary
             </Button>
-            <Button color="primary" className={classes.button}>
-              Primary
-            </Button>
+            <SimpleMenu />
             <Button color="primary" className={classes.button}>
               Primary
             </Button>
