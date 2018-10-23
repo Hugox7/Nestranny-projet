@@ -1,0 +1,15 @@
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    border: grey 1px solid;
+    width:500px;
+}
+
+.text-field {
+    margin: 20px 40px !important;
+}
+
+.button {
+    margin: 20px 40px !important;
+}
