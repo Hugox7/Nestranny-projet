@@ -2,6 +2,8 @@ import React from 'react';
 import './Missions.css';
 import MediaCard from './MediaCard';
 import { TrashList }  from './TrashList';
+import Grid from '@material-ui/core/Grid';
+
 
 const Missions = () => {
     const card = TrashList.map((elem, index) => {
@@ -16,11 +18,12 @@ const Missions = () => {
             />
         )
     })
-
     return(
-        <div className = "card-list">
+        
+        <Grid container justify="space-around">
             {card}
-        </div>
+        </Grid>
+        
     )
 }
 
