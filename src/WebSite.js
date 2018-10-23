@@ -1,26 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 import SimpleAppBar from './composants/SImpleAppBar';
 import './WebSite.css';
 import Contact from './composants/Contact';
-import Home from './composants/Home';
-import { Switch, Route } from 'react-router-dom';
-import Footer from './composants/Footer';
+import corpo from './img/corpo.jpg';
+import Missions from './composants/Missions';
 
-class WebSite extends Component {
-    render() {
+
+const WebSite = () => {
         return (
         <div className="website">
             <SimpleAppBar /> 
-            <Switch>
-                <Route path = "/accueil" component={Home} />
-                <Route path = "/contact" component={Contact} />
-            </Switch>
-            <Footer />
-
-            
+            <img src={corpo} alt='corpo'className='corpo'/>
+            <Missions />
+            <Contact />
         </div>
             
-        );
-    }
-    }
+    );   
+}
 export default WebSite;
