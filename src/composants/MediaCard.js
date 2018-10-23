@@ -8,6 +8,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import SimpleModal from './SimpleModal';
 
 const styles = {
   card: {
@@ -25,7 +26,7 @@ function MediaCard(props) {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="/img/riviere.jpg"
+          image="../img/riviere.jpg"
           title="Contemplative Reptile"
         />
         <CardContent>
@@ -36,12 +37,10 @@ function MediaCard(props) {
             Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
             across all continents except Antarctica
           </Typography>
+          <SimpleModal />
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
         <Button size="small" color="primary">
           Learn More
         </Button>
