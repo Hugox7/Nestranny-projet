@@ -35,6 +35,9 @@ function SimpleAppBar(props) {
             <Button color="primary" className={classes.button}>
               <Link to = "/nestranny-learning">Nestranny Learning</Link>
             </Button>
+            <Button color="primary" className={classes.button}>
+              <Link to = "/contact">contact</Link>
+            </Button>
 
           </Toolbar>
       </AppBar>
