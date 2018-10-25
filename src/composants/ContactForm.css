@@ -1,15 +1,23 @@
 
-#contact-form {
+.contact-form {
+    background-color: lightgray;
+    opacity: 0.85;
+    padding:50px;
+    border-radius: 10px;
+    border: darkgrey 1px solid;
+    /*box-shadow: 6px 6px 6px grey;*/
+}
+
+#form {
     display: flex;
     flex-direction: column;
-    border: grey 1px solid;
-    width:500px;
+    width:35vh;
 }
 
 .text-field {
-    margin: 20px 40px !important;
+    margin: 20px 0px !important;
 }
 
-.button {
-    margin: 20px 40px !important;
+.hidden-input {
+    display: none !important;
 }
