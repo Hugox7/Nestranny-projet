@@ -28,9 +28,6 @@ function SimpleAppBar(props) {
             <Typography variant="h6" color="inherit">
               <img className="logo" src={logo} alt="nestranny-logo" />
             </Typography>
-            <Button color="primary" className={classes.button}>
-              Primary
-            </Button>
             <SimpleMenu />
             <Button color="primary" className={classes.button}>
               <Link to = "/nestranny-learning">Nestranny Learning</Link>

@@ -1,7 +1,9 @@
     import React from 'react';
     import { TextField, Button } from '@material-ui/core';
     import './ContactForm.css';
-    
+    import { withStyles } from '@material-ui/core/styles';
+    import {Grid} from '@material-ui/core';
+    import PropTypes from 'prop-types';
 
 
 
@@ -9,16 +11,48 @@
     const adress = () => {
     return 'hugo.trichard@yahoo.fr'
     }
-    const ContactForm = () => {
+    const styles = () => ({
+        button:{
+            background: 'linear-gradient(45deg,#490303 30%, #FF8E53 90%)',
+            borderRadius: 60,
+            color: 'white',
+            height: 68,
+            padding: '0 30px',
+            marginBottom:36,
+        },
+        hiddenInput:{
+            background: 'linear-gradient(45deg,#490303 30%, #FF8E53 90%)',
+            borderRadius: 60,
+            color: 'white',
+            height: 68,
+            padding: '0 30px',
+            marginBottom:36,
+        
+        },
+        hiddenInput2:{
+            background: 'linear-gradient(45deg,#490303 30%, #FF8E53 90%)',
+            borderRadius: 60,
+            color: 'white',
+            height: 68,
+            padding: '0 30px',
+            marginBottom:36,  
+        }
+    
+        })
+
+
+
+    const ContactForm =(props)=>{
+        const { classes } = props;
         return(
-        <div className="contact-form">
-            
+        
+        <Grid container justify="center" className={classes.container} >
                 <form id="form" action={`//formspree.io/${adress()}`} method="POST">
                     <TextField
                         id="standard-with-placeholder"
                         label="Votre adresse mail"
                         placeholder="Votre adresse mail..."
-                        className="text-field"
+                        className={classes.hiddenInput2}
                         margin="normal"
                         type="email"
                         name="_replyto"
@@ -35,7 +69,7 @@
                         name="message"
                     />
                     <TextField
-                        className="hidden-input"
+                        className={classes.hiddenInput}
                         type="text" 
                         name="_gotcha" 
                     />
@@ -51,13 +85,16 @@
                         name="_next" 
                         value="/merci"
                     />
-                    <Button variant="outlined" className="button" type="submit" value="send">
+                    <Button variant="outlined" className={classes.button} type="submit" value="send">
                         Envoyer
                     </Button>
                 </form>
-            </div>
+            </Grid>
         )
+        
     }
+    ContactForm.propTypes = {
+        classes: PropTypes.object.isRequired,}
 
-    export default ContactForm;
+    export default withStyles(styles)(ContactForm);
 
