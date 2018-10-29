@@ -1,8 +1,12 @@
 import React from 'react';
 import SimpleAppBar from './composants/SImpleAppBar';
-import Missions from './composants/Missions';
-import './WebSite.css';
 import './composants/SimpleAppBar.css';
+import './WebSite.css';
+import Missions from './composants/Missions';
+import Pictos from './composants/Pictos';
+import Footer from './composants/Footer';
+import About from './composants/About';
+import Bandeau from './composants/Bandeau';
 
 
 
@@ -10,10 +14,12 @@ const WebSite = () => {
 
     return (
         <div className="website">
-            <SimpleAppBar /> 
+            <SimpleAppBar />
+            <Bandeau/>
             <Missions />
-            
-            
+            <Pictos/>
+            <About/>
+            <Footer/>
         </div>
         ); 
     }

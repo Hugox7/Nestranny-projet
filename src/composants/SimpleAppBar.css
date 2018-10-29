@@ -4,6 +4,11 @@ img .logo
     height: 30vh;
 }
 
+
+/* a enlever si pas de appbar dans contact */
 #header {
     width: 100% !important;
 }
+
+
+
