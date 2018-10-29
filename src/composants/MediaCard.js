@@ -12,6 +12,7 @@ import SimpleModal from './SimpleModal';
 
 const styles = {
   card: {
+    marginTop:100,
     maxWidth: 345,
   },
   media: {

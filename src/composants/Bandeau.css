@@ -1,0 +1,10 @@
+.photo
+{
+    background: url('../img/corpo.jpg') no-repeat center center;
+}
+.photo h2{
+    font-size: 100px;
+    color:rgb(0, 126, 57);
+    margin: 150px;
+}
+
