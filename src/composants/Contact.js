@@ -5,7 +5,7 @@ import './Contact.css';
 import {Switch, Route} from 'react-router-dom'
 
 
-    class App extends Component {
+    class Contact extends Component {
     render() {
         return (
         
@@ -18,4 +18,4 @@ import {Switch, Route} from 'react-router-dom'
     }
     }
 
-    export default App;
+    export default Contact;

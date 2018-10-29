@@ -8,8 +8,7 @@ import Button from '@material-ui/core/Button';
 import logo from '../img/logo12.png';
 import SimpleMenu from './SimpleMenu';
 import { Link } from 'react-router-dom'; 
-
-
+import {Grid} from '@material-ui/core';
 
 
 const styles = {
@@ -22,7 +21,7 @@ function SimpleAppBar(props) {
   const { classes } = props;
 
   return (
-    <div className={classes.root}>
+    <Grid className={classes.root}>
       <AppBar className="app-bar" position="static" color="default">
           <Toolbar>
             <Typography variant="h6" color="inherit">
@@ -35,10 +34,12 @@ function SimpleAppBar(props) {
             <Button color="primary" className={classes.button}>
               <Link to = "/contact">contact</Link>
             </Button>
-
           </Toolbar>
       </AppBar>
-    </div>
+      <Grid item className={classes.photo}>
+      
+      </Grid>
+    </Grid>
   );
 }
 
