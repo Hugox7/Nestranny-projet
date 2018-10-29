@@ -1,0 +1,14 @@
+.merci {
+    background-color: lightgray;
+    opacity: 0.85;
+    padding:50px;
+    border-radius: 10px;
+    border: darkgrey 1px solid;
+    display: flex;
+    flex-direction: column;
+    text-align: center !important;
+}
+
+.button1 {
+    width:25vh;
+}

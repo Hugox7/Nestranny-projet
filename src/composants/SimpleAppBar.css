@@ -4,3 +4,6 @@ img .logo
     height: 30vh;
 }
 
+#header {
+    width: 100% !important;
+}

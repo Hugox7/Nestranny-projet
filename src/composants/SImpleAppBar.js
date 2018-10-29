@@ -22,18 +22,18 @@ function SimpleAppBar(props) {
   const { classes } = props;
 
   return (
-    <div className={classes.root}>
+    <div id="header" className={classes.root}>
       <AppBar className="app-bar" position="static" color="default">
           <Toolbar>
             <Typography variant="h6" color="inherit">
               <img className="logo" src={logo} alt="nestranny-logo" />
             </Typography>
-            <Button color="primary" className={classes.button}>
-              Primary
-            </Button>
             <SimpleMenu />
             <Button color="primary" className={classes.button}>
               <Link to = "/nestranny-learning">Nestranny Learning</Link>
+            </Button>
+            <Button color="primary" className={classes.button}>
+              <Link to = "/contact">contact</Link>
             </Button>
 
           </Toolbar>
